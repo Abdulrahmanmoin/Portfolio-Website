@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --bs-dark-color: #2c2c2c;
+    --secondary-theme-color: #ffce00;
+    --main-text-color: white;
+    --icon-service-color: #f5c402;
+    --icon-service-bg-color: #ffe991;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2,
+h3,
+h4 {
+    font-size: 2.3rem;
+}
+
+h5{
+    font-size: 2.7rem;
+}
+
+/* navbar styling start */
+
+.navv {
+    background-color: #222222;
+    color: var(--main-text-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-link {
+    color: var(--main-text-color);
+}
+
+.nav-link:hover,
+.home-nav-list:hover {
+    color: var(--secondary-theme-color);
+}
+
+.brand {
+    color: var(--main-text-color);
+}
+
+.brand:hover {
+    color: #c59d00;
+}
+
+/* navbar styling end */
+
+/* hero section styling start */
+
+.hero-section {
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 77, 77, 0.5)), url(img/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-section .text-content {
+    color: var(--main-text-color);
+    position: relative;
+    top: 26%;
+    letter-spacing: 0.2rem;
+}
+
+.greeting-heading span,
+.profession-text span {
+    color: #ffce00;
+}
+
+/* hero section styling end */
+
+/* about-section styling start */
+
+.about-section {
+    background-color: var(--bs-dark-color);
+}
+
+.about-heading {
+    font-size: 3rem;
+}
+
+.about-first-para {
+    font-size: 1.4rem;
+}
+
+.about-second-para {
+    color: var(--secondary-theme-color);
+    font-size: 1.1rem;
+
+}
+
+.my-image{
+    /* transform: translateY(50px);
+    transition: transform 0.4s top 0.3s; */
+    animation: upAndDown 0.4s ease-in 1s 1 ;
+}
+/* about-section styling end */
+
+/* service about-section styling start */
+
+.service-sec-card-box {
+    background-color: var(--icon-service-bg-color);
+}
+
+.service-sec-card-box:hover {
+    box-shadow: rgba(51, 55, 58, 0.2) 0 16px 48px;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in 0s;
+}
+
+/* service about-section styling end */
+
+/* Parallex Effect about-section styling start */
+
+.parallex-effect .container-fluid {
+    background-image: linear-gradient(rgba(255, 202, 29, 0.8), rgba(247, 201, 48, 0.8)), url(img/traffic.jpeg);
+    background-size: cover;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+/* Parallex Effect about-section styling end */
+
+/* Work styling start */
+/* No custom style */
+/* Work styling end */
+
+/* Contact section styling start */
+
+.contact-section .container-fluid{
+    background-image: linear-gradient(rgba(255, 202, 29, 0.8), rgba(247, 201, 48, 0.8)), url(img/project.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-section input{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    border-bottom: 1.5px solid white;
+    border-radius: 0;
+}
+
+.contact-section textarea{
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: #000;
+    border-radius: 0;
+}
+
+.contact-section textarea::placeholder, .contact-section input::placeholder{
+    color: white;
+}
+
+/* Contact section styling end */
+
+/* footer section styling start */
+
+/* footer section styling end */
+
+/* Mediaquery styling for service section */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .service-sec-card-box {
+        max-width: 97%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .service-sec-card-box {
+        max-width: 94%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    h3.greeting-heading{
+        font-size: 1.7rem;
+    }
+    .hero-page-main-heading{
+        font-size: 3rem;
+    }
+    .profession-text{
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 321px){
+    h3.greeting-heading{
+        font-size: 1.5rem;
+    }
+    .hero-page-main-heading{
+        font-size: 2.3rem;
+    }
+    .profession-text{
+        font-size: 1.4rem;
+    }
+}
