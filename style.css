@@ -103,11 +103,6 @@ h5{
 
 }
 
-.my-image{
-    /* transform: translateY(50px);
-    transition: transform 0.4s top 0.3s; */
-    animation: upAndDown 0.4s ease-in 1s 1 ;
-}
 /* about-section styling end */
 
 /* service about-section styling start */
