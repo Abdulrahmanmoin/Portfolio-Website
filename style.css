@@ -182,6 +182,9 @@ h5{
     .service-sec-card-box {
         max-width: 94%;
     }
+    .my-image{
+        margin-top: 7.5rem !important;
+    }
 }
 
 @media screen and (max-width: 426px){
