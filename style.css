@@ -29,6 +29,10 @@ h5{
     font-size: 2.7rem;
 }
 
+.social-media-icons a{
+    text-decoration: none;    
+}
+
 /* navbar styling start */
 
 .navv {
